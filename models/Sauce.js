@@ -2,10 +2,10 @@ const mongoose = require('mongoose');
 
 const sauceSchema = mongoose.Schema({
   userId: { type: String, required: true },
-  name: { type: String, required: true, maxlength: [15, 'Nombre de caractéres limité a 15'] },
-  manufacturer: { type: String, required: true, maxlength: [30, 'Nombre de caractéres limité a 30'] },
+  name: { type: String, required: true },
+  manufacturer: { type: String, required: true},
   description: { type: String, required: true },
-  mainPepper: { type: String, required: true, maxlength: [15, 'Nombre de caractéres limité a 15'] },
+  mainPepper: { type: String, required: true },
   imageUrl: { type: String, required: true },
   heat: { type: Number, required: true },
   likes: { type: Number, required: false, default: 0 },
